@@ -8,34 +8,22 @@ var PWlength = window.prompt("length of password (8 - 20)");
   var PWincludenumbers = window.confirm("Include numbers ?");
 //   var PWincludespecialchars = window.confirm("Include special characters ?");
 
-  var alphabet = "abcdefghijklmnopqrstuvwxyz"
+  var lowercase = "abcdefghijklmnopqrstuvwxyz"
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var numbers = "123456789"
-
+  var specialcharacters = "!@#$%^&*?/.,"
 
 
 function generatePassword() {
     var newpassword = '';
     for(i = 0; i < PWlength ; i++ ) {
-    var randomcharacter = (alphabet[Math.floor(Math.random() * ( 25 - 0 ) + 0)])
+    var randomcharacter = (lowercase[Math.floor(Math.random() * ( 25 - 0 ) + 0)])
 
     newpassword = newpassword + randomcharacter;
     } 
-  // if()
-  // var PWlength = window.prompt("length of password (8 - 20)");
-  // var PWincludelowercase = window.confirm("Include lower case characters ?");
-  // var PWincludeuppercase = window.confirm("Include upper case characters ?");
-  // var PWincludenumbers = window.confirm("Include numbers ?");
-  // var PWincludespecialchars = window.confirm("Include special characters ?");
-  // var index = Math.floor(Math.random() * PWlength.length)
-  // alphabet[Math.floor(Math.random() * ( 25 - 0 ) + 0)]
-    // if(PWincludenumbers===true){
-    //   for(i = 0; i < () ; i++ ) {
-    //     console.log(numbers[Math.floor(Math.random() * ( 8 - 0 ) + 0)])
-    //     } 
-    // }
+
     return newpassword; 
     
-
     if(PWincludenumbers === true){
       var newpassword = '';
     for(i = 0; i < PWlength ; i++ ) {
