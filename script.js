@@ -24,14 +24,14 @@ function generatePassword() {
 
     return newpassword; 
     
-    if(PWincludenumbers === true){
-      var newpassword = '';
-    for(i = 0; i < PWlength ; i++ ) {
-    var randomcharacter = (number[Math.floor(Math.random() * ( 25 - 0 ) + 0)])
+    // if(PWincludenumbers === true){
+    //   var newpassword = '';
+    // for(i = 0; i < PWlength ; i++ ) {
+    // var randomcharacter = (number[Math.floor(Math.random() * ( 25 - 0 ) + 0)])
 
-    newpassword = newpassword + randomcharacter;
-    } 
-    }
+    // newpassword = newpassword + randomcharacter;
+    // } 
+    // }
 }
 
 // Write password to the #password input
