@@ -10,9 +10,15 @@ var PWlength = window.prompt("length of password (8 - 20)");
 
   var alphabet = "abcdefghijklmnopqrstuvwxyz"
   var numbers = "123456789"
+
+
+
 function generatePassword() {
+    var newpassword = '';
     for(i = 0; i < PWlength ; i++ ) {
-    console.log(alphabet[Math.floor(Math.random() * ( 25 - 0 ) + 0)])
+    var randomletter = (alphabet[Math.floor(Math.random() * ( 25 - 0 ) + 0)])
+
+    newpassword = newpassword + randomletter;
     } 
   // if()
   // var PWlength = window.prompt("length of password (8 - 20)");
@@ -27,6 +33,7 @@ function generatePassword() {
     //     console.log(numbers[Math.floor(Math.random() * ( 8 - 0 ) + 0)])
     //     } 
     // }
+    return newpassword;
 }
 
 // Write password to the #password input
