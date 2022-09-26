@@ -2,14 +2,8 @@
 var generateBtn = document.querySelector("#generate");
 
 
-
-
-
-
-
-
 function generatePassword() {
-  var PWlength = window.prompt("length of password (8 - 20)");
+  var PWlength = window.prompt("length of password (8 - 128)");
   if (PWlength < 8) {
     window.alert("Password is too small, try again.");
     return;
