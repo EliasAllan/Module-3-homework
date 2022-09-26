@@ -14,13 +14,18 @@ function generatePassword() {
     window.alert("Password is too small, try again.");
     return;
   }
+
+
   var PWincludelowercase = window.confirm("Include lower case characters ?");
   var PWincludeuppercase = window.confirm("Include upper case characters ?");
   var PWincludenumbers = window.confirm("Include numbers ?");
   var PWincludespecialchars = window.confirm("Include special characters ?");
+
+
   if (PWincludelowercase === true && PWincludeuppercase === false && PWincludenumbers === false && PWincludespecialchars === false) {
     var lowercase = "abcdefghijklmnopqrstuvwxyz";
     var newpassword = '';
+
     for (i = 0; i < PWlength; i++) {
       var randomcharacter = (lowercase[Math.floor(Math.random() * (25 - 0) + 0)])
 
@@ -30,10 +35,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === true && PWincludeuppercase === false && PWincludenumbers === true && PWincludespecialchars === false) {
-    var lowercase = "abcdefghijklmnopqrstuvwxyz123456789";
+    var lowercase = "abcdefghijklmnopqrstuvwxyz123456789123456789";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (34 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (43 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
@@ -107,10 +112,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === false && PWincludeuppercase === true && PWincludenumbers === true && PWincludespecialchars === true) {
-    var lowercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?/.,123456789";
+    var lowercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?/.,123456789123456789";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (46 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (55 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
@@ -118,10 +123,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === true && PWincludeuppercase === false && PWincludenumbers === true && PWincludespecialchars === true) {
-    var lowercase = "abcdefghijklmnopqrstuvwxyz123456789!@#$%^&*?/.,";
+    var lowercase = "abcdefghijklmnopqrstuvwxyz123456789123456789!@#$%^&*?/.,!@#$%^&*?/.,";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (46 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (67 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
@@ -129,10 +134,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === true && PWincludeuppercase === false && PWincludenumbers === false && PWincludespecialchars === true) {
-    var lowercase = "abcdefghijklmnopqrstuvwxyz!@#$%^&*?/.,";
+    var lowercase = "abcdefghijklmnopqrstuvwxyz!@#$%^&*?/.,!@#$%^&*?/.,";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (37 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (49 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
@@ -140,10 +145,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === false && PWincludeuppercase === true && PWincludenumbers === true && PWincludespecialchars === false) {
-    var lowercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+    var lowercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789123456789";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (34 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (43 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
@@ -151,10 +156,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === false && PWincludeuppercase === true && PWincludenumbers === false && PWincludespecialchars === true) {
-    var lowercase = "!@#$%^&*?/.,ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var lowercase = "!@#$%^&*?/.,!@#$%^&*?/.,ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (37 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (49 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
@@ -173,10 +178,10 @@ function generatePassword() {
     return newpassword;
 
   } else if (PWincludelowercase === true && PWincludeuppercase === true && PWincludenumbers === true && PWincludespecialchars === true) {
-    var lowercase = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?/.,123456789";
+    var lowercase = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?/.,123456789!@#$%^&*?/.,123456789";
     var newpassword = '';
     for (i = 0; i < PWlength; i++) {
-      var randomcharacter = (lowercase[Math.floor(Math.random() * (72 - 0) + 0)])
+      var randomcharacter = (lowercase[Math.floor(Math.random() * (93 - 0) + 0)])
 
       newpassword = newpassword + randomcharacter;
     }
