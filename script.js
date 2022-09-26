@@ -4,11 +4,14 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   var PWlength = window.prompt("length of password (8 - 128)");
-  if (PWlength < 8) {
-    window.alert("Password is too small, try again.");
+  if (!PWlength) {
+    window.alert("You need to input a password length.");
     return;
   } else if (PWlength > 128) {
     window.alert("Password is too big, try again.");
+    return;
+  } else if (PWlength < 8) {
+    window.alert("Password is too small, try again.");
     return;
   }
   var PWincludelowercase = window.confirm("Include lower case characters ?");
