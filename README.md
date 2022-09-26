@@ -9,10 +9,8 @@ This is a password generator created with Javascript . It's designed to consolid
 Click the Generate button
 Choose the amount of characters you would like in you password
 Answer the promps to choose what type of characters your password will have
-The password will be shown. Copy it or write it down for later use.
-Refresh the page if you need a new password, since the last password generated wont be deleted automatically.
+The password will be shown. Copy it or write it down for later use.git a
 
-There is an old code commented out in the Javascript file, it was lengthy and had lots of repetition but it was successful in deleting the old password automatically. I opted for the drier code so its easier to read and understand.
 
 
 ## Screenshots
