@@ -7,11 +7,8 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 var userchoices = []
-var setchar = " ";
-var result ;
-
-
-
+var setchar ;
+var result = " " ;
 
 
 
@@ -59,6 +56,10 @@ function generatePassword() {
     result += setchar [Math.floor(Math.random() * n)]
   }
   return result;
+
+
+
+  
 //   if (PWincludelowercase === true && PWincludeuppercase === false && PWincludenumbers === false && PWincludespecialchars === false) {
 //     var lowercase = "abcdefghijklmnopqrstuvwxyz";
 //     var newpassword = '';
@@ -232,6 +233,8 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
+  
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
